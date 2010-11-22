@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  ball: MyString
+  oring: MyString
+  body: MyString
+  mfg: MyString
+  dn_size: 1
+
+two:
+  ball: MyString
+  oring: MyString
+  body: MyString
+  mfg: MyString
+  dn_size: 1
