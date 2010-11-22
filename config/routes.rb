@@ -1,6 +1,6 @@
 GpuDosing::Application.routes.draw do
   
-  get "kits/select"
+  match '/kits',    :to => 'kits#show'
 
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'

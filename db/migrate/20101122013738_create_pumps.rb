@@ -10,7 +10,7 @@ class CreatePumps < ActiveRecord::Migration
       t.timestamps
     end
     
-    add_index :pumps, :line, :flow, :pressure
+#    add_index :pumps, :line, :flow
     
   end
 
