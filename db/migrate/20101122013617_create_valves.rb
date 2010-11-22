@@ -6,6 +6,7 @@ class CreateValves < ActiveRecord::Migration
       t.string :body
       t.string :mfg
       t.integer :dn_size
+      t.string :part_number
 
       t.timestamps
     end
