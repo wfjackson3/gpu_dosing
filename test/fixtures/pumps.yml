@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  dn_size: 1
+  head_size: 1
+
+two:
+  dn_size: 1
+  head_size: 1
