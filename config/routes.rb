@@ -1,4 +1,5 @@
 GpuDosing::Application.routes.draw do
+  resources :kits
   
   match '/kits',    :to => 'kits#show'
 
