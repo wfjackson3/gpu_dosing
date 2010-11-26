@@ -1,7 +1,14 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
+<<<<<<< HEAD
   name: MyString
 
 two:
   name: MyString
+=======
+  pump: MyString
+
+two:
+  pump: MyString
+>>>>>>> starting-out
