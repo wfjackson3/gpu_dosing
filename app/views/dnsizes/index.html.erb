@@ -1,0 +1,23 @@
+<h1>Listing dnsizes</h1>
+
+<table>
+  <tr>
+    <th>Size</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @dnsizes.each do |dnsize| %>
+  <tr>
+    <td><%= dnsize.size %></td>
+    <td><%= link_to 'Show', dnsize %></td>
+    <td><%= link_to 'Edit', edit_dnsize_path(dnsize) %></td>
+    <td><%= link_to 'Destroy', dnsize, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Dnsize', new_dnsize_path %>

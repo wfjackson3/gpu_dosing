@@ -10,7 +10,25 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101122013738) do
+ActiveRecord::Schema.define(:version => 20101126203910) do
+
+  create_table "d_nsizes", :force => true do |t|
+    t.integer  "size"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "dn_sizes", :force => true do |t|
+    t.integer  "size"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "lines", :force => true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "pumps", :force => true do |t|
     t.integer  "dn_size"

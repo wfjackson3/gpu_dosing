@@ -1,4 +1,8 @@
 GpuDosing::Application.routes.draw do
+  resources :dnsizes
+
+  resources :lines
+
   # resources :kits
   
   match '/kits',    :to => 'kits#show'
