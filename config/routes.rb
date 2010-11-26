@@ -1,10 +1,14 @@
 GpuDosing::Application.routes.draw do
+  resources :valvekits
+
+  resources :balls
+
+  resources :gaskets
+
+  resources :heads
+
   resources :dnsizes
 
-  resources :lines
-
-  # resources :kits
-  
   resources :lines
 
   match '/kits',    :to => 'kits#show'

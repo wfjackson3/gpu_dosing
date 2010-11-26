@@ -1,0 +1,17 @@
+<%= form_for(@head) do |f| %>
+  <% if @head.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@head.errors.count, "error") %> prohibited this head from being saved:</h2>
+
+      <ul>
+      <% @head.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

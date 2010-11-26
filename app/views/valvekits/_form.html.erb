@@ -1,0 +1,37 @@
+<%= form_for(@valvekit) do |f| %>
+  <% if @valvekit.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@valvekit.errors.count, "error") %> prohibited this valvekit from being saved:</h2>
+
+      <ul>
+      <% @valvekit.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :PN %><br />
+    <%= f.text_field :PN %>
+  </div>
+  <div class="field">
+    <%= f.label :ball %><br />
+    <%= f.text_field :ball %>
+  </div>
+  <div class="field">
+    <%= f.label :gasket %><br />
+    <%= f.text_field :gasket %>
+  </div>
+  <div class="field">
+    <%= f.label :body %><br />
+    <%= f.text_field :body %>
+  </div>
+  <div class="field">
+    <%= f.label :dnsize %><br />
+    <%= f.text_field :dnsize %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

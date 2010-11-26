@@ -1,0 +1,23 @@
+<h1>Listing gaskets</h1>
+
+<table>
+  <tr>
+    <th>Material</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @gaskets.each do |gasket| %>
+  <tr>
+    <td><%= gasket.material %></td>
+    <td><%= link_to 'Show', gasket %></td>
+    <td><%= link_to 'Edit', edit_gasket_path(gasket) %></td>
+    <td><%= link_to 'Destroy', gasket, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Gasket', new_gasket_path %>

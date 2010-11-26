@@ -1,15 +1,15 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
+  PN: 1
   ball: MyString
-  oring: MyString
+  gasket: MyString
   body: MyString
-  mfg: MyString
-  dn_size: 1
+  dnsize: 1
 
 two:
+  PN: 1
   ball: MyString
-  oring: MyString
+  gasket: MyString
   body: MyString
-  mfg: MyString
-  dn_size: 1
+  dnsize: 1
