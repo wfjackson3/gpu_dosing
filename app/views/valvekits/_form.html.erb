@@ -16,20 +16,20 @@
     <%= f.text_field :PN %>
   </div>
   <div class="field">
-    <%= f.label :ball %><br />
-    <%= f.text_field :ball %>
+    <%= f.label :head_id %><br />
+    <%= collection_select :valvekit, :head_id, Head.all, :id, :material %>
   </div>
   <div class="field">
-    <%= f.label :gasket %><br />
-    <%= f.text_field :gasket %>
+    <%= f.label :gasket_id %><br />
+    <%= collection_select :valvekit, :gasket_id, Gasket.all, :id, :material %>
   </div>
   <div class="field">
-    <%= f.label :body %><br />
-    <%= f.text_field :body %>
+    <%= f.label :ball_id %><br />
+    <%= collection_select :valvekit, :ball_id, Ball.all, :id, :material %>
   </div>
   <div class="field">
     <%= f.label :dnsize_id %><br />
-    <%= f.text_field :dnsize_id %>
+    <%= collection_select :valvekit, :dnsize_id, Dnsize.all, :id, :size %>
   </div>
   <div class="actions">
     <%= f.submit %>

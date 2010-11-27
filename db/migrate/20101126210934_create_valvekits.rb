@@ -2,9 +2,9 @@ class CreateValvekits < ActiveRecord::Migration
   def self.up
     create_table :valvekits do |t|
       t.integer :PN
-      t.string :ball
-      t.string :gasket
-      t.string :body
+      t.integer :ball_id
+      t.integer :gasket_id
+      t.integer :head_id
       t.integer :dnsize_id
       t.string :mfg
 

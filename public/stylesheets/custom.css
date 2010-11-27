@@ -110,4 +110,5 @@ table.panel {
 td {
   width:    50%;
   padding:  1em;
+  vertical-align: top;
 }

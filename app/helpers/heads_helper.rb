@@ -1,2 +1,0 @@
-module HeadsHelper
-end
