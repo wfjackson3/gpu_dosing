@@ -10,22 +10,27 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101126203910) do
+ActiveRecord::Schema.define(:version => 20101126210934) do
 
-  create_table "d_nsizes", :force => true do |t|
+  create_table "balls", :force => true do |t|
+    t.string   "material"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "dnsizes", :force => true do |t|
     t.integer  "size"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "dn_sizes", :force => true do |t|
-    t.integer  "size"
+  create_table "gaskets", :force => true do |t|
+    t.string   "material"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "lines", :force => true do |t|
-    t.string   "name"
+  create_table "heads", :force => true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -40,13 +45,13 @@ ActiveRecord::Schema.define(:version => 20101126203910) do
     t.datetime "updated_at"
   end
 
-  create_table "valves", :force => true do |t|
+  create_table "valvekits", :force => true do |t|
+    t.integer  "PN"
     t.string   "ball"
-    t.string   "oring"
+    t.string   "gasket"
     t.string   "body"
+    t.integer  "dnsize"
     t.string   "mfg"
-    t.integer  "dn_size"
-    t.string   "part_number"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

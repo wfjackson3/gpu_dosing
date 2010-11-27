@@ -1,4 +1,6 @@
 GpuDosing::Application.routes.draw do
+  resources :lines
+
   resources :valvekits
 
   resources :balls
@@ -9,12 +11,11 @@ GpuDosing::Application.routes.draw do
 
   resources :dnsizes
 
-  resources :lines
-
   match '/kits',    :to => 'kits#show'
 
   match '/contact', :to => 'pages#contact'
   match '/about',   :to => 'pages#about'
+  match '/admin',   :to => 'pages#admin'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

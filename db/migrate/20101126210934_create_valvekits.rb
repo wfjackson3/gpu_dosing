@@ -5,7 +5,7 @@ class CreateValvekits < ActiveRecord::Migration
       t.string :ball
       t.string :gasket
       t.string :body
-      t.integer :dnsize
+      t.integer :dnsize_id
       t.string :mfg
 
       t.timestamps

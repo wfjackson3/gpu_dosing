@@ -10,5 +10,9 @@ class PagesController < ApplicationController
   def contact
     @title="Contact"
   end
+  
+  def admin
+    @title="Admin"
+  end
 
 end
