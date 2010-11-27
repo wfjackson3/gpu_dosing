@@ -1,27 +1,27 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <b>Pn:</b>
+  <b>Part Number:</b>
   <%= @valvekit.PN %>
 </p>
 
 <p>
-  <b>Ball:</b>
-  <%= @valvekit.head %>
+  <b>Head:</b>
+  <%= @valvekit.head.material %>
 </p>
 
 <p>
   <b>Gasket:</b>
-  <%= @valvekit.gasket %>
+  <%= @valvekit.gasket.material %>
 </p>
 
 <p>
-  <b>Body:</b>
-  <%= @valvekit.ball %>
+  <b>Ball:</b>
+  <%= @valvekit.ball.material %>
 </p>
 
 <p>
-  <b>Dnsize:</b>
+  <b>DN size:</b>
   <%= @valvekit.dnsize.size %>
 </p>
 

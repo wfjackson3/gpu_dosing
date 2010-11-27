@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Material:</b>
+  <%= @gasket.material %>
+</p>
+
+<p>
+  <b>Typekey:</b>
+  <%= @gasket.typekey %>
+</p>
+
+<p>
+  <b>Tradename:</b>
+  <%= @gasket.tradename %>
+</p>
+
+
+<%= link_to 'Edit', edit_gasket_path(@gasket) %> |
+<%= link_to 'Back', gaskets_path %>

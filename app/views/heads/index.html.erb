@@ -1,0 +1,27 @@
+<h1>Listing heads</h1>
+
+<table>
+  <tr>
+    <th>Material</th>
+    <th>Typekey</th>
+    <th>Tradename</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @heads.each do |head| %>
+  <tr>
+    <td><%= head.material %></td>
+    <td><%= head.typekey %></td>
+    <td><%= head.tradename %></td>
+    <td><%= link_to 'Show', head %></td>
+    <td><%= link_to 'Edit', edit_head_path(head) %></td>
+    <td><%= link_to 'Destroy', head, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Head', new_head_path %>

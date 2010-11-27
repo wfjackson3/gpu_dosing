@@ -1,0 +1,29 @@
+<%= form_for(@gasket) do |f| %>
+  <% if @gasket.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@gasket.errors.count, "error") %> prohibited this gasket from being saved:</h2>
+
+      <ul>
+      <% @gasket.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :material %><br />
+    <%= f.text_field :material %>
+  </div>
+  <div class="field">
+    <%= f.label :typekey %><br />
+    <%= f.text_field :typekey %>
+  </div>
+  <div class="field">
+    <%= f.label :tradename %><br />
+    <%= f.text_field :tradename %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

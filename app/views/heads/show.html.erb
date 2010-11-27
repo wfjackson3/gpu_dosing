@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Material:</b>
+  <%= @head.material %>
+</p>
+
+<p>
+  <b>Typekey:</b>
+  <%= @head.typekey %>
+</p>
+
+<p>
+  <b>Tradename:</b>
+  <%= @head.tradename %>
+</p>
+
+
+<%= link_to 'Edit', edit_head_path(@head) %> |
+<%= link_to 'Back', heads_path %>

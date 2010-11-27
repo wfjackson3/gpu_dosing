@@ -1,0 +1,27 @@
+<h1>Listing balls</h1>
+
+<table>
+  <tr>
+    <th>Material</th>
+    <th>Typekey</th>
+    <th>Tradename</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @balls.each do |ball| %>
+  <tr>
+    <td><%= ball.material %></td>
+    <td><%= ball.typekey %></td>
+    <td><%= ball.tradename %></td>
+    <td><%= link_to 'Show', ball %></td>
+    <td><%= link_to 'Edit', edit_ball_path(ball) %></td>
+    <td><%= link_to 'Destroy', ball, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Ball', new_ball_path %>
