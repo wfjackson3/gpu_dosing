@@ -112,3 +112,7 @@ td {
   padding:  1em;
   vertical-align: top;
 }
+
+th.valves {
+  text-align: center;
+}
