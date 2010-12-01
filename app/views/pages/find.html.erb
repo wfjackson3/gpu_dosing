@@ -1,2 +1,30 @@
 <h1>Find parts kits</h1>
 <p>This page needs filled in with a form and backed up by search logic to find parts.</p>
+
+
+<table>
+  <tr>
+    <td><div class="field">
+      <%= label :line_id, "Line" %><br />
+      <%= collection_select :line, :line_id, Line.all, :id, :pump %>
+    </div>
+    </td>
+    
+    
+    <td><div class="field">
+      <%= label :head_id, "Head" %><br />
+      <%= collection_select :head, :head_id, Head.all, :id, :material %>
+    </div></td>
+    <td><div class="field">
+      <%= label :gasket_id, "Gasket" %><br />
+      <%= collection_select :valvekit, :gasket_id, Gasket.all, :id, :material %>
+    </div></td>
+    <td><div class="field">
+      <%= label :ball_id, "Ball" %><br />
+      <%= collection_select :valvekit, :ball_id, Ball.all, :id, :material %>
+    </div></td>
+  </tr>
+</table>
+<div class="actions">
+  <p>Removed the f.submit button</p>
+</div>

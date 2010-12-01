@@ -3,7 +3,7 @@
 }
 
 body {
-  background: #cff;
+  background: #d7e59b;
 }
 
 header {
@@ -107,7 +107,7 @@ table.panel {
   margin-bottom: 0;
 }
 
-td {
+td.admin {
   width:    50%;
   padding:  1em;
   vertical-align: top;
