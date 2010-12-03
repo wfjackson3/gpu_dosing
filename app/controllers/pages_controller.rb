@@ -14,5 +14,10 @@ class PagesController < ApplicationController
   def admin
     @title="Admin"
   end
+  
+  def find
+    @title="Find"
+    @kits = Valvekit.search(params[:search])
+  end
 
 end

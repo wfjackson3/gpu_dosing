@@ -1,7 +1,7 @@
 <h1>Find parts kits</h1>
 <p>This page needs filled in with a form and backed up by search logic to find parts.</p>
 
-
+<%= form_tag(find_path, :method => "get") do %>
 <table>
   <tr>
     <td><div class="field">
@@ -17,14 +17,20 @@
     </div></td>
     <td><div class="field">
       <%= label :gasket_id, "Gasket" %><br />
-      <%= collection_select :valvekit, :gasket_id, Gasket.all, :id, :material %>
+      <%= collection_select :gasket, :gasket_id, Gasket.all, :id, :material %>
     </div></td>
     <td><div class="field">
       <%= label :ball_id, "Ball" %><br />
-      <%= collection_select :valvekit, :ball_id, Ball.all, :id, :material %>
+      <%= collection_select :ball, :ball_id, Ball.all, :id, :material %>
     </div></td>
   </tr>
 </table>
 <div class="actions">
-  <p>Removed the f.submit button</p>
+  <%= submit_tag "Search", :name => nil %>
+</div>
+<% end %>
+
+<div>
+  <b>Valve kit</b>
+  <%= @kits %>
 </div>
