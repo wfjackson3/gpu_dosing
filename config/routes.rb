@@ -1,4 +1,6 @@
 GpuDosing::Application.routes.draw do
+  resources :searches
+
   resources :balls
 
   resources :gaskets

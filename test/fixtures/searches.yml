@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  line_id: 1
+  flow: 1
+  pressure: 1
+  head_id: 1
+
+two:
+  line_id: 1
+  flow: 1
+  pressure: 1
+  head_id: 1

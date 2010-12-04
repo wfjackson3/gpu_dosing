@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Line:</b>
+  <%= @search.line_id %>
+</p>
+
+<p>
+  <b>Flow:</b>
+  <%= @search.flow %>
+</p>
+
+<p>
+  <b>Pressure:</b>
+  <%= @search.pressure %>
+</p>
+
+<p>
+  <b>Head:</b>
+  <%= @search.head_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_search_path(@search) %> |
+<%= link_to 'Back', searches_path %>

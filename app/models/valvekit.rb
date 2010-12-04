@@ -4,6 +4,8 @@ class Valvekit < ActiveRecord::Base
   belongs_to :gasket
   belongs_to :ball
   
+  #attr_accessible
+  
   def self.search(search)
     if search
       find(:all)
