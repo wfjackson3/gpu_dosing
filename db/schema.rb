@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101127233459) do
+ActiveRecord::Schema.define(:version => 20101204030929) do
 
   create_table "balls", :force => true do |t|
     t.string   "material"
@@ -44,6 +44,15 @@ ActiveRecord::Schema.define(:version => 20101127233459) do
 
   create_table "lines", :force => true do |t|
     t.string   "pump"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "searches", :force => true do |t|
+    t.integer  "line_id"
+    t.integer  "flow"
+    t.integer  "pressure"
+    t.integer  "head_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

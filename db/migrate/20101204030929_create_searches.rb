@@ -5,6 +5,8 @@ class CreateSearches < ActiveRecord::Migration
       t.integer :flow
       t.integer :pressure
       t.integer :head_id
+      t.integer :gasket_id
+      t.integer :ball_id
 
       t.timestamps
     end

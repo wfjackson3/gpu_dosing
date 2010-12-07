@@ -1,30 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Part Number:</b>
-  <%= @valvekit.PN %>
-</p>
-
-<p>
-  <b>Head:</b>
-  <%= @valvekit.head.material %>
-</p>
-
-<p>
-  <b>Gasket:</b>
-  <%= @valvekit.gasket.material %>
-</p>
-
-<p>
-  <b>Ball:</b>
-  <%= @valvekit.ball.material %>
-</p>
-
-<p>
-  <b>DN size:</b>
-  <%= @valvekit.dnsize.size %>
-</p>
-
+<%= render :partial => @search.dnsize %>
 
 <%= link_to 'Edit', edit_valvekit_path(@valvekit) %> |
 <%= link_to 'Back', valvekits_path %>
