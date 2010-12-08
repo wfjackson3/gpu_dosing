@@ -21,15 +21,15 @@
   </div>
   <div class="field">
     <%= f.label :line_id %><br />
-    <%= f.text_field :line_id %>
+    <%= f.collection_select :line_id, Line.all, :id, :name %>
   </div>
   <div class="field">
     <%= f.label :dnsize_id %><br />
-    <%= f.text_field :dnsize_id %>
+    <%= f.collection_select :dnsize_id, Dnsize.all, :id, :size %>
   </div>
   <div class="field">
     <%= f.label :headsize_id %><br />
-    <%= f.text_field :headsize_id %>
+    <%= f.collection_select :headsize_id, Headsize.all, :id, :size %>
   </div>
   <div class="actions">
     <%= f.submit %>

@@ -17,7 +17,7 @@ class PagesController < ApplicationController
   
   def find
     @title="Find"
-    @kits = Valvekit.search(params[:search])
+#    @kits = Valve.search(params[:search])
   end
 
 end

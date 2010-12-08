@@ -6,9 +6,12 @@
   <tr>
     <td><div class="field">
       <%= label :line_id, "Line" %><br />
-      <%= collection_select :line, :line_id, Line.all, :id, :pump %>
-    </div>
-    </td>
+      <%= collection_select :line, :line_id, Line.all, :id, :name %>
+    </div></td>
+    <td><div class="field">
+      <%= label :size_id, "Size" %><br />
+      <%= collection_select :size, :size_id, Size.all, :id, :flow %>
+    </div></td>
     <td><div class="field">
       <%= label :head_id, "Head" %><br />
       <%= collection_select :head, :head_id, Head.all, :id, :material %>
