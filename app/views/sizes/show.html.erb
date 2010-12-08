@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Flow:</b>
+  <%= @size.flow %>
+</p>
+
+<p>
+  <b>Pressure:</b>
+  <%= @size.pressure %>
+</p>
+
+<p>
+  <b>Line:</b>
+  <%= @size.line_id %>
+</p>
+
+<p>
+  <b>Dnsize:</b>
+  <%= @size.dnsize_id %>
+</p>
+
+<p>
+  <b>Headsize:</b>
+  <%= @size.headsize_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_size_path(@size) %> |
+<%= link_to 'Back', sizes_path %>

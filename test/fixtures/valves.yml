@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  partnumber: 1
+  head_id: 1
+  gasket_id: 1
+  ball_id: 1
+  dnsize_id: 1
+  line_id: 1
+  iskit: false
+
+two:
+  partnumber: 1
+  head_id: 1
+  gasket_id: 1
+  ball_id: 1
+  dnsize_id: 1
+  line_id: 1
+  iskit: false

@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  flow: 1
+  pressure: 1
+  line_id: 1
+  dnsize_id: 1
+  headsize_id: 1
+
+two:
+  flow: 1
+  pressure: 1
+  line_id: 1
+  dnsize_id: 1
+  headsize_id: 1

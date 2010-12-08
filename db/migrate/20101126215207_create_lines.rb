@@ -1,7 +1,7 @@
 class CreateLines < ActiveRecord::Migration
   def self.up
     create_table :lines do |t|
-      t.string :pump
+      t.string :name
 
       t.timestamps
     end

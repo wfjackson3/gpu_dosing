@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Part number:</b>
+  <%= @valve.partnumber %>
+</p>
+
+<p>
+  <b>Head:</b>
+  <%= @valve.head.material %>
+</p>
+
+<p>
+  <b>Gasket:</b>
+  <%= @valve.gasket.material %>
+</p>
+
+<p>
+  <b>Ball:</b>
+  <%= @valve.ball.material %>
+</p>
+
+<p>
+  <b>DN size:</b>
+  <%= @valve.dnsize.size %>
+</p>
+
+<p>
+  <b>Line:</b>
+  <%= @valve.line.name %>
+</p>
+
+<p>
+  <b>Is kit:</b>
+  <%= @valve.iskit %>
+</p>
+
+
+<%= link_to 'Edit', edit_valve_path(@valve) %> |
+<%= link_to 'Back', valves_path %>

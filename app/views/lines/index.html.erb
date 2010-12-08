@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <th>Pump</th>
+    <th>Name</th>
     <th></th>
     <th></th>
     <th></th>
@@ -10,7 +10,7 @@
 
 <% @lines.each do |line| %>
   <tr>
-    <td><%= line.pump %></td>
+    <td><%= line.name %></td>
     <td><%= link_to 'Show', line %></td>
     <td><%= link_to 'Edit', edit_line_path(line) %></td>
     <td><%= link_to 'Destroy', line, :confirm => 'Are you sure?', :method => :delete %></td>

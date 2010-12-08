@@ -1,4 +1,12 @@
 GpuDosing::Application.routes.draw do
+  resources :valves
+
+  resources :sizes
+
+  resources :companies
+
+  resources :headsizes
+
   resources :searches
 
   resources :balls
@@ -8,8 +16,6 @@ GpuDosing::Application.routes.draw do
   resources :heads
 
   resources :lines
-
-  resources :valvekits
 
   resources :dnsizes
 
