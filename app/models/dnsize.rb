@@ -1,3 +1,3 @@
 class Dnsize < ActiveRecord::Base
-  has_many :valvekits
+  has_many :valves
 end
