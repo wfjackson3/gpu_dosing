@@ -36,4 +36,6 @@
   <% @valve.each do |kit| %>
     <%= kit.partnumber %> | <%= kit.line.name %><br />
   <% end %>
+  <%= @numb %>
+  <%= render 'kit' %>
 </div>

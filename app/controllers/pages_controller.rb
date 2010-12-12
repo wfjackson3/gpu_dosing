@@ -23,10 +23,9 @@ class PagesController < ApplicationController
       @valve = @valve.where(:line_id => params[:line][:line_id]) if !params[:line][:line_id].blank?
       @valve = @valve.where(:head_id => params[:head][:head_id]) if !params[:head][:head_id].blank?
       # repeat for each piece of information required to uniquely identify a given kit
+      @numb = @valve.length
     end
-    
-    
-    
+    @kit = {:valve, @valve}
   end
 
 end
