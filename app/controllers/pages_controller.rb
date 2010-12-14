@@ -25,7 +25,6 @@ class PagesController < ApplicationController
       # repeat for each piece of information required to uniquely identify a given kit
       @numb = @valve.length
     end
-    @kit = {:valve, @valve}
   end
 
 end
