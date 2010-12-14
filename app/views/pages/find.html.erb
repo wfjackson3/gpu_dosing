@@ -6,7 +6,7 @@
   <tr>
     <td><div class="field">
       <%= label :line_id, "Line" %><br />
-      <%= collection_select :line, :line_id, Line.all, :id, :name %>
+      <%= collection_select :line, :line_id, Line.all, :id, :name, :include_blank => true %>
     </div></td>
     <td><div class="field">
       <%= label :size_id, "Size" %><br />
