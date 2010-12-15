@@ -16,8 +16,8 @@
   <tr>
     <td><%= size.flow %></td>
     <td><%= size.pressure %></td>
-    <td><%= size.line_id %></td>
-    <td><%= size.dnsize_id %></td>
+    <td><%= size.line.name %></td>
+    <td><%= size.dnsize.size %></td>
     <td><%= size.headsize_id %></td>
     <td><%= link_to 'Show', size %></td>
     <td><%= link_to 'Edit', edit_size_path(size) %></td>
