@@ -1,4 +1,6 @@
 GpuDosing::Application.routes.draw do
+  resources :valvegroups
+
   resources :valves
 
   resources :sizes

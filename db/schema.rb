@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101208030613) do
+ActiveRecord::Schema.define(:version => 20101221183627) do
 
   create_table "balls", :force => true do |t|
     t.string   "material"
@@ -75,8 +75,15 @@ ActiveRecord::Schema.define(:version => 20101208030613) do
     t.integer  "flow"
     t.integer  "pressure"
     t.integer  "line_id"
+    t.integer  "valvegroup_id"
     t.integer  "dnsize_id"
     t.integer  "headsize_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "valvegroups", :force => true do |t|
+    t.string   "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -86,6 +93,7 @@ ActiveRecord::Schema.define(:version => 20101208030613) do
     t.integer  "head_id"
     t.integer  "gasket_id"
     t.integer  "ball_id"
+    t.integer  "valvegroup_id"
     t.integer  "dnsize_id"
     t.integer  "line_id"
     t.boolean  "iskit"

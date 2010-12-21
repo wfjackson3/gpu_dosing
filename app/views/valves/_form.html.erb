@@ -28,8 +28,8 @@
     <%= f.collection_select :ball_id, Ball.all, :id, :material, :include_blank => true %>
   </div>
   <div class="field">
-    <%= f.label :dnsize_id %><br />
-    <%= f.collection_select :dnsize_id, Dnsize.all, :id, :size, :include_blank => true %>
+    <%= f.label :valvegroup_id %><br />
+    <%= f.collection_select :valvegroup_id, Valvegroup.all, :id, :description, :include_blank => true %>
   </div>
   <div class="field">
     <%= f.label :line_id %><br />

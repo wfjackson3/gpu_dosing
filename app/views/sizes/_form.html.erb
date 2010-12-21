@@ -24,12 +24,8 @@
     <%= f.collection_select :line_id, Line.all, :id, :name %>
   </div>
   <div class="field">
-    <%= f.label :dnsize_id %><br />
-    <%= f.collection_select :dnsize_id, Dnsize.all, :id, :size %>
-  </div>
-  <div class="field">
-    <%= f.label :headsize_id %><br />
-    <%= f.collection_select :headsize_id, Headsize.all, :id, :size %>
+    <%= f.label :valvegroup_id %><br />
+    <%= f.collection_select :valvegroup_id, Valvegroup.all, :id, :description %>
   </div>
   <div class="actions">
     <%= f.submit %>

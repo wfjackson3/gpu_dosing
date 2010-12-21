@@ -1,0 +1,23 @@
+<h1>Listing valvegroups</h1>
+
+<table>
+  <tr>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @valvegroups.each do |valvegroup| %>
+  <tr>
+    <td><%= valvegroup.description %></td>
+    <td><%= link_to 'Show', valvegroup %></td>
+    <td><%= link_to 'Edit', edit_valvegroup_path(valvegroup) %></td>
+    <td><%= link_to 'Destroy', valvegroup, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Valvegroup', new_valvegroup_path %>

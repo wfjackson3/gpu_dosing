@@ -4,6 +4,9 @@ class CreateSizes < ActiveRecord::Migration
       t.integer :flow
       t.integer :pressure
       t.integer :line_id
+      t.integer :valvegroup_id
+      
+      # The fields below this line are deprecated
       t.integer :dnsize_id
       t.integer :headsize_id
 

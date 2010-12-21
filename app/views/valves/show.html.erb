@@ -21,11 +21,6 @@
 </p>
 
 <p>
-  <b>DN size:</b>
-  <%= @valve.dnsize.size %>
-</p>
-
-<p>
   <b>Line:</b>
   <%= @valve.line.name %>
 </p>
@@ -35,6 +30,10 @@
   <%= @valve.iskit %>
 </p>
 
+<p>
+  <b>Group:</b>
+  <%= @valve.valvegroup.description %>
+</p>
 
 <%= link_to 'Edit', edit_valve_path(@valve) %> |
 <%= link_to 'Back', valves_path %>
