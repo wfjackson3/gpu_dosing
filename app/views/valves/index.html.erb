@@ -6,24 +6,20 @@
     <th>Head</th>
     <th>Gasket</th>
     <th>Ball</th>
-    <th>DN size</th>
-    <th>Line</th>
+    <th>Group</th>
     <th>Is kit</th>
-    <th></th>
     <th></th>
     <th></th>
   </tr>
 
 <% @valves.each do |valve| %>
   <tr>
-    <td><%= valve.partnumber %></td>
+    <td><%= link_to valve.partnumber, valve %></td>
     <td><%= valve.head.material %></td>
     <td><%= valve.gasket.material %></td>
     <td><%= valve.ball.material %></td>
-    <td><%= valve.line.name %></td>
     <td><%= valve.valvegroup.description %></td>
     <td><%= valve.iskit %></td>
-    <td><%= link_to 'Show', valve %></td>
     <td><%= link_to 'Edit', edit_valve_path(valve) %></td>
     <td><%= link_to 'Destroy', valve, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>

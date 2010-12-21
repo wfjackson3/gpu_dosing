@@ -32,10 +32,6 @@
     <%= f.collection_select :valvegroup_id, Valvegroup.all, :id, :description, :include_blank => true %>
   </div>
   <div class="field">
-    <%= f.label :line_id %><br />
-    <%= f.collection_select :line_id, Line.all, :id, :name, :include_blank => true %>
-  </div>
-  <div class="field">
     <%= f.label :iskit %><br />
     <%= f.check_box :iskit %>
   </div>

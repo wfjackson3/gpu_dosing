@@ -34,7 +34,7 @@
 <div>
   <h2>Valve kit</h2>
   <% @valve.each do |kit| %>
-    <%= kit.partnumber %> | <%= kit.line.name %><br />
+    <%= kit.partnumber %> | <%= kit.valvegroup.description %><br />
   <% end %>
   <%= @numb %>
   <%= render 'kit' %>

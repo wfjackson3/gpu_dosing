@@ -6,8 +6,6 @@ class CreateValves < ActiveRecord::Migration
       t.integer :gasket_id
       t.integer :ball_id
       t.integer :valvegroup_id
-      t.integer :dnsize_id
-      t.integer :line_id
       t.boolean :iskit
 
       t.timestamps
