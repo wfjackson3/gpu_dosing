@@ -19,8 +19,6 @@ GpuDosing::Application.routes.draw do
 
   resources :lines
 
-  resources :dnsizes
-
   match '/kits',    :to => 'kits#show'
 
   match '/contact', :to => 'pages#contact'
