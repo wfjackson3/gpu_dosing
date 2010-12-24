@@ -6,23 +6,52 @@
   <tr>
     <td><div class="field">
       <%= label :line_id, "Line" %><br />
-      <%= collection_select :line, :line_id, Line.all, :id, :name, :include_blank => true %>
+      <%= collection_select :line,
+                            :line_id,
+                            Line.all,
+                            :id,
+                            :name,
+                            {:include_blank => true,
+                              :selected => (if params[:line].nil? then :default else params[:line][:line_id].to_i end)} %>
     </div></td>
     <td><div class="field">
       <%= label :size_id, "Size" %><br />
-      <%= collection_select :size, :size_id, Size.all, :id, :flow_pressure %>
+      <%= collection_select :size,
+                            :size_id,
+                            Size.all,
+                            :id,
+                            :flow_pressure,
+                            {:selected => (if params[:size].nil? then :default else params[:size][:size_id].to_i end)} %>
     </div></td>
     <td><div class="field">
       <%= label :head_id, "Head" %><br />
-      <%= collection_select :head, :head_id, Head.all, :id, :material, :include_blank => true %>
+      <%= collection_select :head,
+                            :head_id,
+                            Head.all,
+                            :id,
+                            :material,
+                            {:include_blank => true,
+                              :selected => (if params[:head].nil? then :default else params[:head][:head_id].to_i end)} %>
     </div></td>
     <td><div class="field">
       <%= label :gasket_id, "Gasket" %><br />
-      <%= collection_select :gasket, :gasket_id, Gasket.all, :id, :material, :include_blank => true %>
+      <%= collection_select :gasket,
+                            :gasket_id,
+                            Gasket.all,
+                            :id,
+                            :material,
+                            {:include_blank => true,
+                              :selected => (if params[:gasket].nil? then :default else params[:gasket][:gasket_id].to_i end)} %>
     </div></td>
     <td><div class="field">
       <%= label :ball_id, "Ball" %><br />
-      <%= collection_select :ball, :ball_id, Ball.all, :id, :material, :include_blank => true %>
+      <%= collection_select :ball,
+                            :ball_id,
+                            Ball.all,
+                            :id,
+                            :material,
+                            {:include_blank => true,
+                              :selected => (if params[:ball].nil? then :default else params[:ball][:ball_id].to_i end)} %>
     </div></td>
   </tr>
 </table>
