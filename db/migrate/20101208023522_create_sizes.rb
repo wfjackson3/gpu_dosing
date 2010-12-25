@@ -7,8 +7,8 @@ class CreateSizes < ActiveRecord::Migration
       t.integer :valvegroup_id
       
       # The fields below this line are deprecated
-      t.integer :dnsize_id
-      t.integer :headsize_id
+      # t.integer :dnsize_id
+      # t.integer :headsize_id
 
       t.timestamps
     end

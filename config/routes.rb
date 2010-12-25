@@ -7,8 +7,6 @@ GpuDosing::Application.routes.draw do
 
   resources :companies
 
-  resources :headsizes
-
   resources :searches
 
   resources :balls

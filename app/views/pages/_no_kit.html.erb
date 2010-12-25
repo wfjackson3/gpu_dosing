@@ -1,3 +1,4 @@
 <div>
   No kit was found!  Would you like to request it?
+  <%= mail_to("me@domain.com", nil, :subject => "New parts kit request", :body => params[:head][:head_id] )%>
 </div>

@@ -20,7 +20,8 @@ class PagesController < ApplicationController
     @valve = Valve.limit(10) # replace this, it doesn't operate first it works last
     #raise params.inspect
     if !params[:line].nil?
-      @valve = @valve.where(:line_id => params[:line][:line_id]) if !params[:line][:line_id].blank?
+      # The line where statement needs to be removed once I figure out how to filter the sizes shown based on the selected line
+      # @valve = @valve.where(:line_id => params[:line][:line_id]) if !params[:line][:line_id].blank?
       @valve = @valve.where(:head_id => params[:head][:head_id]) if !params[:head][:head_id].blank?
       @valve = @valve.where(:gasket_id => params[:gasket][:gasket_id]) if !params[:gasket][:gasket_id].blank?
       @valve = @valve.where(:valvegroup_id => Size.find(:first, :conditions => {:id => params[:size][:size_id]}).valvegroup_id)

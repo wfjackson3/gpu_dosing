@@ -29,7 +29,7 @@
                             :head_id,
                             Head.all,
                             :id,
-                            :material,
+                            :code,
                             {:include_blank => true,
                               :selected => (if params[:head].nil? then :default else params[:head][:head_id].to_i end)} %>
     </div></td>
@@ -39,7 +39,7 @@
                             :gasket_id,
                             Gasket.all,
                             :id,
-                            :material,
+                            :code,
                             {:include_blank => true,
                               :selected => (if params[:gasket].nil? then :default else params[:gasket][:gasket_id].to_i end)} %>
     </div></td>
@@ -49,7 +49,7 @@
                             :ball_id,
                             Ball.all,
                             :id,
-                            :material,
+                            :code,
                             {:include_blank => true,
                               :selected => (if params[:ball].nil? then :default else params[:ball][:ball_id].to_i end)} %>
     </div></td>

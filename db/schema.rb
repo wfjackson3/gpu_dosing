@@ -26,12 +26,6 @@ ActiveRecord::Schema.define(:version => 20101221183627) do
     t.datetime "updated_at"
   end
 
-  create_table "dnsizes", :force => true do |t|
-    t.integer  "size"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
   create_table "gaskets", :force => true do |t|
     t.string   "material"
     t.string   "typekey"
@@ -44,12 +38,6 @@ ActiveRecord::Schema.define(:version => 20101221183627) do
     t.string   "material"
     t.string   "typekey"
     t.string   "tradename"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "headsizes", :force => true do |t|
-    t.integer  "size"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -94,8 +82,6 @@ ActiveRecord::Schema.define(:version => 20101221183627) do
     t.integer  "gasket_id"
     t.integer  "ball_id"
     t.integer  "valvegroup_id"
-    t.integer  "dnsize_id"
-    t.integer  "line_id"
     t.boolean  "iskit"
     t.datetime "created_at"
     t.datetime "updated_at"
