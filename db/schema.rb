@@ -64,8 +64,6 @@ ActiveRecord::Schema.define(:version => 20101221183627) do
     t.integer  "pressure"
     t.integer  "line_id"
     t.integer  "valvegroup_id"
-    t.integer  "dnsize_id"
-    t.integer  "headsize_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

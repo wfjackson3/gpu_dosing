@@ -14,6 +14,8 @@ class ValvesController < ApplicationController
   # GET /valves/1.xml
   def show
     @valve = Valve.find(params[:id])
+    
+    @size = Size.where(:valvegroup_id => Size.find(:all, :conditions => {:id => @valve[:id]}))
 
     respond_to do |format|
       format.html # show.html.erb

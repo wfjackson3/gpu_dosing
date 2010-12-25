@@ -30,5 +30,13 @@
   <%= @valve.valvegroup.description %>
 </p>
 
+<p>
+  <b>This kit applies to the following pumps:</b><br />
+  <% @size.each do |group| %>
+    <%= group.line.name %> <%= group.flow_pressure %><br />
+  <% end %>
+</p>
+
 <%= link_to 'Edit', edit_valve_path(@valve) %> |
-<%= link_to 'Back', valves_path %>
+<%= link_to 'Back', valves_path %> |
+<%= link_to 'New Valve', new_valve_path %>
