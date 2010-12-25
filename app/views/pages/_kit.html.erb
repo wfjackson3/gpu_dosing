@@ -1,6 +1,6 @@
-<% if kit.length > 1 %>
+<% if @valve.length > 1 %>
   <%= render 'not_enough' %>
-  <% else if kit.length == 1 %>
+  <% else if @valve.length == 1 %>
     <%= render 'found_kit' %>
     <% else %>
       <%= render 'no_kit' %>
