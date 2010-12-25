@@ -59,12 +59,12 @@
   <%= submit_tag "Search", :name => nil %>
 </div>
 <% end %>
-
-<div>
+<br />
+<div class="kit">
   <h2>Valve kit</h2>
   <% @valve.each do |kit| %>
     <%= kit.partnumber %> | <%= kit.valvegroup.description %><br />
   <% end %>
   <%= @numb %>
-  <%= render 'kit' %>
+  <%= render 'kit', 'kit' => valve %>
 </div>
