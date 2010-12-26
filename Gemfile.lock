@@ -31,8 +31,11 @@ GEM
     arel (1.0.1)
       activesupport (~> 3.0.0)
     builder (2.1.2)
+    csv-mapper (0.5.1)
+      fastercsv
     erubis (2.6.6)
       abstract (>= 1.0.0)
+    fastercsv (1.5.3)
     i18n (0.4.2)
     mail (2.2.9)
       activesupport (>= 2.3.6)
@@ -70,5 +73,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  csv-mapper
   rails (= 3.0.1)
   sqlite3-ruby
