@@ -2,20 +2,16 @@
 
 <table>
   <tr>
-    <th>Flow</th>
-    <th>Pressure</th>
+    <th>Flow - Pressure</th>
     <th>Line</th>
-    <th></th>
     <th></th>
     <th></th>
   </tr>
 
 <% @sizes.each do |size| %>
   <tr>
-    <td><%= size.flow %></td>
-    <td><%= size.pressure %></td>
+    <td><%= link_to size.flow_pressure, size %></td>
     <td><%= size.line.name %></td>
-    <td><%= link_to 'Show', size %></td>
     <td><%= link_to 'Edit', edit_size_path(size) %></td>
     <td><%= link_to 'Destroy', size, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>

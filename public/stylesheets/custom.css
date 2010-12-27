@@ -118,3 +118,13 @@ td.admin {
 th.valves {
   text-align: center;
 }
+
+.kit {
+  border: #ffa43c;
+  border-style: solid;
+  border-width: 2px;
+  padding:  10px;
+  -moz-border-radius:    10px;
+  -webkit-border-radius: 10px;
+  border-radius:         10px;
+}
