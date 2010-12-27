@@ -23,6 +23,7 @@ GpuDosing::Application.routes.draw do
   match '/about',   :to => 'pages#about'
   match '/admin',   :to => 'pages#admin'
   match '/find',    :to => 'pages#find'
+  match '/import',  :to => 'pages#import' 
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

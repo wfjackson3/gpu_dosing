@@ -15,6 +15,18 @@ class PagesController < ApplicationController
     @title="Admin"
   end
   
+  def import
+    @results = CsvMapper.import('/home/wfj3/Aptana Studio 3 Workspace/gpu_dosing/test_import.csv') do
+      # read_attributes_from_file
+      map_to Size
+      after_row lambda{|row, size| size.save}
+      start_at_row 1
+      [flow, pressure, line_id, valvegroup_id]
+    end
+    
+    # results.first
+  end
+  
   def find
     @title="Find"
     @valve = Valve.limit(10) # replace this, it doesn't operate first it works last
