@@ -33,6 +33,9 @@
                             {:include_blank => true,
                               :selected => (if params[:head].nil? then :default else params[:head][:head_id].to_i end)} %>
     </div></td>
+    <td><div><br />
+      -X/
+    </div></td>
     <td><div class="field">
       <%= label :gasket_id, "Gasket" %><br />
       <%= collection_select :gasket,
@@ -43,6 +46,9 @@
                             {:include_blank => true,
                               :selected => (if params[:gasket].nil? then :default else params[:gasket][:gasket_id].to_i end)} %>
     </div></td>
+    <td><div><br />
+      /
+    </div></td>
     <td><div class="field">
       <%= label :ball_id, "Ball" %><br />
       <%= collection_select :ball,
@@ -52,6 +58,9 @@
                             :code,
                             {:include_blank => true,
                               :selected => (if params[:ball].nil? then :default else params[:ball][:ball_id].to_i end)} %>
+    </div></td>
+    <td><div><br />
+      -X-21XXX
     </div></td>
   </tr>
 </table>
