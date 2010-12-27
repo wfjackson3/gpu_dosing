@@ -1,3 +1,16 @@
+# == Schema Information
+# Schema version: 20101221183627
+#
+# Table name: heads
+#
+#  id         :integer         not null, primary key
+#  material   :string(255)
+#  typekey    :string(255)
+#  tradename  :string(255)
+#  created_at :datetime
+#  updated_at :datetime
+#
+
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:

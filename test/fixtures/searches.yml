@@ -1,3 +1,19 @@
+# == Schema Information
+# Schema version: 20101221183627
+#
+# Table name: searches
+#
+#  id         :integer         not null, primary key
+#  line_id    :integer
+#  flow       :integer
+#  pressure   :integer
+#  head_id    :integer
+#  gasket_id  :integer
+#  ball_id    :integer
+#  created_at :datetime
+#  updated_at :datetime
+#
+
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:

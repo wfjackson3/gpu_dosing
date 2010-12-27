@@ -21,10 +21,11 @@ class PagesController < ApplicationController
       map_to Size
       after_row lambda{|row, size| size.save}
       start_at_row 1
-      [flow, pressure, line_id, valvegroup_id]
+      flow
+      pressure
+      line_id
+      valvegroup_id
     end
-    
-    # results.first
   end
   
   def find

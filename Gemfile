@@ -5,7 +5,11 @@ gem 'rails', '3.0.1'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3-ruby', :group => :development
+group :development do
+  gem 'sqlite3-ruby'
+  gem 'annotate-models'
+end
+
 gem 'csv-mapper'
 
 # gem 'searchlogic'
