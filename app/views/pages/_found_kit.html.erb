@@ -1,8 +1,11 @@
 <div>
-  <%= found_kit.partnumber %><br />
   <% if found_kit.iskit? %>
+    <h3><%= found_kit.class %> Kit</h3>
+    <%= found_kit.partnumber %><br />
     <p>This is a complete kit.  An order for quantity 1 will provide the parts for a complete pump.</p> 
   <% else %>
+    <h3><%= found_kit.class%> Part</h3>
+    <%= found_kit.partnumber %><br />
     <p>This is not a kit.  An order for quantity 1 will only provide a single part.</p>
   <% end %>
 </div>

@@ -45,7 +45,6 @@ class PagesController < ApplicationController
       # Returns a relation, but does not work with .dnsize_id appended
       # @size = Size.where(:id => params[:size][:size_id]).dnsize_id
       
-      # repeat for each piece of information required to uniquely identify a given kit
       @numb = @valve.length
     end
   end

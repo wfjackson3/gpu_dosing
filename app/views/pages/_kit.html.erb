@@ -1,0 +1,13 @@
+<div class="kit">
+  <% if kit.length > 1 %>
+    <h3><%= kit.first.class %></h3>
+    <%= render 'not_enough' %>
+    <% else if kit.length < 1 %>
+      <h3>Valve kit</h3>
+      <%= render 'no_kit' %>
+      <% else %>
+        <%= render :partial => 'found_kit', :object => kit %>
+    <% end %>
+  <% end %>
+</div>
+<br />

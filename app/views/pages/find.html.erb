@@ -69,7 +69,7 @@
 <% end %>
 <br />
 <div class="results">
-  <%= render 'valve' %>
+  <%= render :partial => 'kit', :locals => {:kit => @valve} %>
 </div>
 <div class="debug">
   <h1>Ignore everything below this text</h1>
