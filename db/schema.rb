@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101221183627) do
+ActiveRecord::Schema.define(:version => 20101227174756) do
 
   create_table "balls", :force => true do |t|
     t.string   "material"
@@ -19,6 +19,8 @@ ActiveRecord::Schema.define(:version => 20101221183627) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "balls", ["typekey"], :name => "index_balls_on_typekey", :unique => true
 
   create_table "companies", :force => true do |t|
     t.string   "name"
@@ -34,6 +36,8 @@ ActiveRecord::Schema.define(:version => 20101221183627) do
     t.datetime "updated_at"
   end
 
+  add_index "gaskets", ["typekey"], :name => "index_gaskets_on_typekey", :unique => true
+
   create_table "heads", :force => true do |t|
     t.string   "material"
     t.string   "typekey"
@@ -42,11 +46,15 @@ ActiveRecord::Schema.define(:version => 20101221183627) do
     t.datetime "updated_at"
   end
 
+  add_index "heads", ["typekey"], :name => "index_heads_on_typekey", :unique => true
+
   create_table "lines", :force => true do |t|
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "lines", ["name"], :name => "index_lines_on_name", :unique => true
 
   create_table "searches", :force => true do |t|
     t.integer  "line_id"
@@ -68,6 +76,8 @@ ActiveRecord::Schema.define(:version => 20101221183627) do
     t.datetime "updated_at"
   end
 
+  add_index "sizes", ["flow", "pressure", "line_id"], :name => "index_sizes_on_flow_and_pressure_and_line_id", :unique => true
+
   create_table "valvegroups", :force => true do |t|
     t.string   "description"
     t.datetime "created_at"
@@ -84,5 +94,7 @@ ActiveRecord::Schema.define(:version => 20101221183627) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "valves", ["partnumber", "valvegroup_id"], :name => "index_valves_on_partnumber_and_valvegroup_id", :unique => true
 
 end
